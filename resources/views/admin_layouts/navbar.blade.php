@@ -45,7 +45,7 @@
           </ul> --}}
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
   <li>
-    <a class="dropdown-item" href="{{ url('locale/en') }}">
+    <a class="dropdown-item" href="{{ url('admin/locale/en') }}">
       <img src="{{ asset('assets/img/flags/GB.png') }}" alt="English" width="20" class="me-2"> English
     </a>
   </li>
