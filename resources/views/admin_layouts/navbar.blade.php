@@ -33,13 +33,17 @@
       </a>
     </div>
     <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
-      {{-- <div class="ms-md-auto pe-md-3 d-flex align-items-center">
-        <div class="input-group input-group-outline">
-          <label class="form-label">Search here</label>
-          <input type="text" class="form-control">
-        </div>
-      </div> --}}
-      <ul class="navbar-nav  justify-content-end">
+      <ul class="navbar-nav justify-content-end">
+        <!-- Language Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Language
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+            <li><a class="dropdown-item" href="{{ url('locale/en') }}">English</a></li>
+            <li><a class="dropdown-item" href="{{ url('locale/zh') }}">中文</a></li>
+          </ul>
+        </li>
 
         <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
           <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
@@ -50,8 +54,6 @@
             </div>
           </a>
         </li>
-
-
       </ul>
     </div>
   </div>
