@@ -1,0 +1,20 @@
+<?php 
+return [
+ 'localization' => 'Localization',
+ 'admin_dashboard' => 'Admin Dashboard',
+ 'profile' => 'Profile',
+ 'win_lose_report' => 'Win/Lose Report',
+ 'agent_list' => 'Agent List',
+ 'player_list' => 'Player List',
+ 'general_setup' => 'General Setup',
+ 'banner' => 'Banner',
+ 'ads_banner' => 'Ads Banner',
+ 'banner_text' => 'Banner Text',
+ 'promotion' => 'Promotion',
+ 'game_type' => 'Game Type',
+ 'game_list' => 'Game List',
+ 'transaction' => 'Transaction',
+ 'debit_transaction_log' => 'DebitTransactionLog',
+ 'credit_transaction_log' => 'CreditTransactionLog',
+ 'logout' => 'Logout',
+];

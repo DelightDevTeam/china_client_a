@@ -13,14 +13,15 @@ use App\Http\Controllers\Admin\PromotionController;
 use App\Http\Controllers\Admin\BannerTextController;
 use App\Http\Controllers\Admin\PermissionController;
 use App\Http\Controllers\Admin\Agent\AgentController;
+use App\Http\Controllers\Admin\PaymentTypeController;
 use App\Http\Controllers\Report\TestReportController;
 use App\Http\Controllers\Admin\GetBetDetailController;
+use App\Http\Controllers\Admin\LocalizationController;
 use App\Http\Controllers\Admin\Master\MasterController;
 use App\Http\Controllers\Admin\Player\PlayerController;
 use App\Http\Controllers\Admin\GameTypeProductController;
 use App\Http\Controllers\Admin\BannerAds\BannerAdsController;
 use App\Http\Controllers\Admin\Deposit\DepositRequestController;
-use App\Http\Controllers\Admin\PaymentTypeController;
 use App\Http\Controllers\Admin\TransferLog\TransferLogController;
 use App\Http\Controllers\Admin\WithDraw\WithDrawRequestController;
 
@@ -31,6 +32,9 @@ Route::group([
     Route::post('test', function () {
         dd('here');
     })->name('test');
+
+    // localization 
+    Route::get('locale{langs}', [LocalizationController::class, 'setLang']);
 
     Route::post('balance-up', [HomeController::class, 'balanceUp'])->name('balanceUp');
     Route::get('logs/{id}', [HomeController::class, 'logs'])

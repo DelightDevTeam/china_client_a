@@ -50,7 +50,7 @@
     </a>
   </li>
   <li>
-    <a class="dropdown-item" href="{{ url('locale/zh') }}">
+    <a class="dropdown-item" href="{{ url('admin/locale/zh') }}">
       <img src="{{ asset('assets/img/flags/china.png') }}" alt="中文" width="20" class="me-2"> 中文
     </a>
   </li>
